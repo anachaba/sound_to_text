@@ -1,7 +1,7 @@
 from google.cloud import speech
 
 def transcribe_audio(mp3_file_path):
-    client = speech.SpeechClient.from_service_account_file(r'keys/orion-google-key.json')
+    client = speech.SpeechClient.from_service_account_file(r'keys/myproject-google-key.json')
 
     with open(mp3_file_path, 'rb') as f:
         mp3_data = f.read()
